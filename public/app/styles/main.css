@@ -1,0 +1,203 @@
+/* GENERAL STYLES */
+
+
+html{
+  height: 100%;
+  background: #e9e9e9;
+}
+
+body {
+    min-height: 100%;
+    height: 100%;
+    background: #e9e9e9;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px !important;
+    margin: 0px !important;
+    font-weight: bold;
+}
+
+.panel{
+    background: url("../img/bg.png") no-repeat;
+    height : 600px;
+    float: left;
+}
+
+.panel-left{
+    border: solid 1px #000080;
+    height : 600px;
+    width: 990px;
+    float: left;
+}
+
+
+.needle-knots{
+    background: url("../img/needle-big.png") no-repeat;
+    position: absolute;
+    height : 180px;
+    width : 6px;
+    top: 236px;
+    left: 226px;
+    transform:rotate(10deg);
+    z-index: 999;
+}
+
+.needle-altitude{
+    background: url("../img/needle-small.png") 30% 17% no-repeat;
+    position: absolute;
+    height : 140px;
+    width : 6px;
+    transform:rotate(290deg);
+    top: 255px;
+    left: 560px;
+    z-index: 999;
+}
+
+.knots-counter{
+    position: absolute;
+    height : 20px;
+    width : 90px;
+    top: 354px;
+    left: 194px;
+    z-index: 999;
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+    letter-spacing: 12pt;
+
+}
+
+.knots-min{
+    position: absolute;
+    height : 20px;
+    width : 90px;
+    top: 500px;
+    left: 174px;
+    z-index: 999;
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+    letter-spacing: 12pt;
+
+}
+
+.knots-max{
+    position: absolute;
+    height : 20px;
+    width : 90px;
+    top: 530px;
+    left: 174px;
+    z-index: 999;
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+    letter-spacing: 12pt;
+
+}
+
+.knots-avg{
+    position: absolute;
+    height : 20px;
+    width : 90px;
+    top: 560px;
+    left: 174px;
+    z-index: 999;
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+    letter-spacing: 12pt;
+
+}
+
+.altitude-counter{
+    position: absolute;
+    height : 20px;
+    width : 90px;
+    top: 354px;
+    left: 526px;
+    z-index: 999;
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 12pt;
+
+}
+
+.altitude-min{
+    position: absolute;
+    height : 20px;
+    width : 90px;
+    top: 500px;
+    left: 510px;
+    z-index: 999;
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+    letter-spacing: 12pt;
+
+}
+
+.altitude-max{
+    position: absolute;
+    height : 20px;
+    width : 90px;
+    top: 530px;
+    left: 510px;
+    z-index: 999;
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+    letter-spacing: 12pt;
+
+}
+
+.altitude-avg{
+    position: absolute;
+    height : 20px;
+    width : 90px;
+    top: 560px;
+    left: 510px;
+    z-index: 999;
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+    letter-spacing: 12pt;
+
+}
+
+.flaps-switch{
+    background: url("../img/flaps-switch.png") no-repeat;
+    position: absolute;
+    height : 52px;
+    width : 20px;
+    transform:translateX(0pt);
+    left: 806px;
+    top: 352px;
+    z-index: 999;
+}
+
+.landing-switch{
+    background: url("../img/landing-gear-off.png") no-repeat;
+    position: absolute;
+    height : 52px;
+    width : 140px;
+    transform:translateX(0pt);
+    left: 806px;
+    top: 216px;
+    z-index: 999;
+}
+
+.connection{
+    background: url("../img/connection-offline.png") no-repeat;
+    position: absolute;
+    height : 22px;
+    width : 160px;
+    transform:translateX(0pt);
+    left: 806px;
+    top: 528px;
+    z-index: 999;
+    padding-left: 36px;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}

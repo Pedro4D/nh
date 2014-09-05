@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="NakedHeartApp">
+<head>
+    <title>NakedHeart Tasks</title>
+    <link rel='stylesheet' href='app/styles/main.css' />
+    <link rel='stylesheet' href='http://getbootstrap.com/dist/css/bootstrap.min.css' />
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="app/scripts/app.js"></script>
+    <script type="text/javascript" src="app/scripts/socket.io-1.0.6.js"></script>
+    <script type="text/javascript" src="app/scripts/controllers/controllers.js"></script>
+    <script type="text/javascript" src="app/scripts/directives/directives.js"></script>
+    <script type="text/javascript" src="app/scripts/services/services.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+<div class="navbar" data-ng-controller="NHController">
+   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li data-access-level="accessLevels.anon" active-nav >
+                <a href="/#!/login">Log in</a>
+            </li>
+            <li data-access-level="accessLevels.user" active-nav>
+                <a href="/#!/home">Home</a>
+            </li>
+            <li data-access-level="accessLevels.admin" active-nav>
+                <a href="/#!/admin">Admin</a>
+            </li><!--
+            <li data-access-level="accessLevels.user">
+                <a href="/#!/chans" data-ng-click="logout()">Chans</a>
+            </li>-->
+            <li data-access-level="accessLevels.user">
+                <a href="" data-ng-click="logout()">Log out</a>
+            </li>
+        </ul>
+        <div id="userInfo" data-access-level="accessLevels.user" class="pull-right">
+            Welcome&nbsp;<strong class="ng-binding">{{ username }}</strong>
+        </div>
+    </div>
+</div>
+</nav>
+<ng-view></ng-view>
+
+</body>
+</html>

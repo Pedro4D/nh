@@ -1,0 +1,38 @@
+<!-- NavBar -->
+<div class="panel">
+  <div class="panel-left">
+      <span class="needle-knots"></span>
+      <span class="knots-counter">000</span>
+      <span class="needle-altitude"></span>
+      <span class="knots-min">0</span>
+      <span class="knots-max">0</span>
+      <span class="knots-avg">0</span>
+      <span class="altitude-counter">0</span>
+      <span class="altitude-min">0</span>
+      <span class="altitude-max">0</span>
+      <span class="altitude-avg">0</span>
+      <span class="flaps-switch"></span>
+      <span class="landing-switch"></span>
+      <span class="connection">Offline</span>
+  </div>
+<script>
+    console.log("socket");
+    //#1 Declaramos el objeto socket que se conectará en este caso a localhost
+    var socket = io.connect();
+    // Emit ready event.
+    socket.emit('ready');
+
+    //#5 El servidor nos responde al click con este evento y nos da el número de clicks en el callback.
+    socket.on('recieveValues', function(values){
+        console.log(values);
+        //TODO
+    });
+
+    //#6 Si nos desconectamos, muestra el log y cambia el mensaje.
+    socket.on('disconnect', function () {
+        console.log('Desconectado!');
+        $('#status').addClass('disconnected');
+        $('#status').html('disconnected');
+    });
+</script>
+</div>
